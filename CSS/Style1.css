@@ -418,13 +418,12 @@ th
         flex-direction: column; 
         align-items: center; 
         padding: 10px;
-        margin-left: 50px; 
+        margin-left: 80px; 
     }
 
     .Rettangolo, .Form 
     {
         width: 100%; 
-       
         box-sizing: border-box; 
         align-self: center;
     }
