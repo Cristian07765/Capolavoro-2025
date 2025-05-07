@@ -1,31 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
-.Menu-desktop 
-{
-    display: flex; 
+    box-sizing: border-box;
 }
-.Menu-mobile 
-{
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+h2, h5 {
+    margin: 10px;
+    font-family: "Roboto";
+    text-align: center;
+}
+
+p {
+    margin: 10px;
+    font-family: "Roboto";
+    font-size: 10px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#Intestazione {
+    display: flex;
+    align-items: center;
+}
+
+#Testo {
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.Title1, .Title2 {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #29BEC6;
+}
+
+.Title2 {
+    opacity: 0.8;
+}
+
+.Menu-desktop {
+    display: flex;
+    overflow: auto;
+    text-align: right;
+}
+
+.Menu-desktop a {
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    border-right: 2px solid #232323e3;
+}
+
+.Menu-desktop a:hover {
+    background-color: #74d0d5;
+}
+
+.Menu-mobile {
     display: none;
-    position: relative; 
+    position: relative;
 }
-.Menu-mobile a
-{
+
+.Menu-mobile a {
     display: block;
     text-decoration: none;
     margin-bottom: 5px;
     color: white;
 }
-.Menu-mobile a:hover 
-{
-    background-color: #75e7ed; 
+
+.Menu-mobile a:hover {
+    background-color: #75e7ed;
 }
-.Menu-tendina
-{
+
+.Menu-tendina {
     background-color: #3498db;
     color: white;
     padding: 10px 15px;
@@ -34,224 +98,24 @@
     cursor: pointer;
     border-radius: 5px;
 }
-.Contenuto-menu
-{
-    display: none; /* Nascondiamo il menu di default */
+
+.Contenuto-menu {
+    display: none;
     position: absolute;
     top: 100%;
-    left: -150;
+    left: -150px;
     background-color: #43a9f7b5;
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
     min-width: 150px;
 }
-.Contenuto-menu.show 
-{
+
+.Contenuto-menu.show {
     display: block;
 }
 
-.Colonna 
-{
-    margin: 40px;
-    margin-right: 220px; 
-}
-
-    /* Telefoni */
-@media (max-width: 767px) {
-    body 
-    {
-      font-size: 14px;
-    }
-    .Menu-desktop 
-    {
-        display: none; 
-    }
-    .Menu-mobile 
-    {
-        display: block;
-    }
-    .Contenuto2
-    {
-        flex-direction: column; 
-        align-items: center;
-    }
-    .Colonna 
-    {
-        width: 90%;
-    }
-    .Form 
-    {
-        width: 90%; 
-        max-width: none;
-    }
-    .Rettangolo 
-    {
-        width: 90%; 
-        margin-bottom: 20px;
-    }
-    table 
-    {
-        width: 100%;
-        font-size: 14px;  
-    }
-    .Form
-    {
-        width: 100%;
-        font-size:14px
-    }
-}   
-    /* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) 
-{
-    body 
-    {
-      font-size: 14px;
-    }
-    .Menu-desktop 
-    {
-        display: none; 
-    }
-    .Menu-mobile 
-    {
-        display: block;
-    }
-    .Contenuto1
-    {
-        flex-direction: column; 
-        align-items: center; 
-    }
-    .Colonna 
-    {
-        justify-content: center;
-        margin-top: 20px; 
-        flex: 100%; 
-    }
-    .Form 
-    {
-        width: 90%; 
-        max-width: none;
-    }
-    .Rettangolo 
-    {
-        flex: 100%; 
-        margin: 10px 0; 
-    }
-    table 
-    {
-        width: 100%;
-        font-size: 16px;  
-    }
-    .Form
-    {
-        width: 100%;
-        font-size: 16px
-    }
-}
-    /* Desktop */
-@media (min-width: 1024px) {
-    body 
-    {
-      font-size: 18px;
-    }
-    .Menu-mobile 
-    {
-        display: none; 
-    }  
-    table 
-    {
-        width: 100%;
-        font-size: 18px;  
-    }
-    .Form
-    {
-        width: 100%;
-        font-size:18px
-    }
-
-    .Colonna 
-    {
-        margin: none;
-    }
-}
-body
-{
-    background-color: #ffffff;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-h2 
-{
-    margin: 10px;  
-    font-family: "Roboto";
-    text-align: center;
-}
-h5
-{
-    margin: 10px;  
-    font-family: "Roboto";
-    text-align: center;
-}
-p
-{
-    margin: 10 10 10 10;
-    font-family: "Roboto";
-    size: 10px;
-}
-header 
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-#Intestazione 
-{
-    display: flex;
-    align-items: center;
-}
-#Testo 
-{
-    margin: 0;
-    flex-grow: 1;
-    text-align: left;
-}
-.Title1 
-{
-    font-family: "Roboto";
-    font-size: 18px;
-    color: #29BEC6;
-}
-.Title2 
-{
-    font-family: "Roboto";
-    font-size: 18px;
-    color: #29BEC6;
-    opacity: 0.8;
-}
-.Menu-desktop
-{
-    overflow: auto;
-    text-align: right;
-}
-.Menu-desktop a 
-{
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    border-right: 2px solid #232323e3;
-}
-
-.Menu-desktop a:hover 
-{
-    background-color: #74d0d5;
-    padding: 10px;
-}
-.Galleria 
-{
+.Galleria {
     position: relative;
     width: 100%;
     max-width: 1200px;
@@ -261,210 +125,231 @@ header
     justify-content: center;
     align-items: center;
 }
-.Galleria-Immagini 
-{
+
+.Galleria-Immagini {
     display: flex;
     align-items: center;
     transition: transform 0.5s ease;
 }
-.Galleria-Immagini img 
-{
+
+.Galleria-Immagini img {
     width: 100%;
     height: auto;
     display: block;
 }
-.precedente {
+
+.precedente, .successivo {
     position: absolute;
     top: 50%;
     background-color: rgba(89, 176, 238, 0.834);
     padding: 10px;
     font-size: 18px;
+}
+
+.precedente {
     left: 10px;
 }
-.successivo 
-{
-    position: absolute;
-    top: 50%;
-    background-color: rgba(89, 176, 238, 0.834);
-    padding: 10px;
-    font-size: 18px;
+
+.successivo {
     right: 10px;
 }
-.Griglia
-{
+
+.Griglia {
     display: grid;
-    grid-template-columns: repeat((1, 3fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-    border: black 5px;
 }
-.Elemento
-{
+
+.Elemento {
     align-items: center;
     text-align: center;
     padding: 10px;
 }
-footer 
-{
+
+footer {
     width: 100%;
     background: #38bdc46f;
     text-align: center;
-    bottom: 0;
     margin-top: auto;
     font-family: "Roboto";
 }
 
-/* Codice CSS "Chi Siamo" */
-ul
-{
+ul {
     list-style-type: disc;
     font-size: 18px;
 }
-li.Elenco
-{
+
+li.Elenco {
     font-size: 20px;
     font-weight: bold;
-    font-family: "Roboto"
-}
-.Contenuto 
-{
-    flex-grow: 1;
-}
-
-/* Codice CSS "Viaggi" */
-table
-{
-    width: 80%; 
-    margin-left: auto;  
-    margin-right: auto; 
-    border-collapse: collapse; 
     font-family: "Roboto";
 }
-th, td
-{
+
+th, td {
     border: 1px solid black;
     background-color: #8ce6f2cc;
     text-align: center;
 }
-th 
-{
-    background-color: #8ce6f2cc; 
-}
-.Prenota
-{
-    width: 150px;
-    height: 50px;
-    align-self: center;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    border: white;
+th {
+    background-color: #8ce6f2cc;
 }
 
-/* Codice CSS "Last-Minute" */
-.Slogan
-{
-    font-size: 20px;
+.Contenuto {
+    flex-grow: 1;
 }
 
-/* Codice CSS "Contatti" */
-.Contenuto2 
-{
+/* Sezione Contatti */
+.Contenuto2 {
     display: grid;
-    grid-template-columns: 2fr 1fr; 
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 20px;
-    align-items: start; 
+    align-items: start;
 }
-.Rettangolo 
-{
+
+.Rettangolo, .Contatti, .Form {
+    text-align: center;
+}
+
+.Rettangolo {
     padding: 20px;
     background-color: #e0f7fa;
     border-radius: 8px;
-    width: 70%; 
-    margin-bottom: 20px; 
+    width: 70%;
+    margin-bottom: 20px;
     word-wrap: break-word;
 }
-.Form 
-{
+
+.Form {
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 100%; 
+    width: 100%;
 }
 
-.Form textarea
-{
+.Form textarea {
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
 }
-.Contatti
-{
+
+.Contatti {
     margin-left: 50px;
 }
-.contatti
-{
+
+.contatti {
     margin-left: 15px;
     font-family: "Roboto";
 }
 
-@media (max-width: 767px) 
-{
+#Nome, #Email, #Telefono {
+    width: 200px;
+    height: 40px;
+}
 
-    .Contenuto2 
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        width: 100%;
-        margin-left: 80px;
-        text-align: center;
-    }
-
-    .Rettangolo,
-    .Contatti 
-    {
-        width: 100%;
-        max-width: 400px;
-        margin-left: 80px;
-        text-align: center;
-    }
-    .Form
-    {
-        align-items: center;
-        text-align: center;
-    }
-}
-#Nome
-{
-    width: 200px;
-    height: 40px;
-}
-#Email
-{
-    width: 200px;
-    height: 40px;
-}
-#Telefono
-{
-    width: 200px;
-    height: 40px;
-}
-#Messaggio
-{
+#Messaggio {
     width: 200px;
     height: 80px;
 }
-#submit-button
-{
+
+#submit-button {
     width: 20vh;
     height: 5vh;
     border-radius: 10%;
     border-color: rgb(0, 0, 0);
     background-color: black;
     color: white;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .Menu-desktop {
+        display: none;
+    }
+
+    .Menu-mobile {
+        display: block;
+    }
+
+    .Contenuto2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .Rettangolo, .Contatti {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .Form {
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    .Menu-desktop {
+        display: none;
+    }
+
+    .Menu-mobile {
+        display: block;
+    }
+
+    .Contenuto1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Colonna, .Rettangolo {
+        margin-top: 20px;
+        flex: 100%;
+    }
+
+    .Form {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Menu-mobile {
+        display: none;
+    }
+
+    table {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .Form {
+        width: 100%;
+        font-size: 18px;
+    }
 }
