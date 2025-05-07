@@ -418,16 +418,22 @@ th
         flex-direction: column; 
         align-items: center; 
         padding: 10px;
-        margin-right: 20px;
+        margin: 0; 
     }
 
     .Rettangolo, .Form 
     {
-        width: 90%; 
-        margin-bottom: 20px; 
+        width: 100%; 
+        margin: 0 0 20px 0; 
+        box-sizing: border-box; 
     }
 
+    .Contatti 
+    {
+        margin-left: 0;
+    }
 }
+
 #Nome
 {
     width: 200px;
