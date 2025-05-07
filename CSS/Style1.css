@@ -168,6 +168,11 @@
         width: 100%;
         font-size:18px
     }
+
+    .Colonna 
+    {
+        margin: none;
+    }
 }
 body
 {
