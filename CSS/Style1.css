@@ -421,7 +421,7 @@ th
         justify-content: center;
         padding: 10px;
         width: 100%;
-        margin-left: 40px;
+        margin-left: 80px;
         text-align: center;
     }
 
@@ -430,8 +430,12 @@ th
     {
         width: 100%;
         max-width: 400px;
-        margin-left: 40px;
+        margin-left: 80px;
         text-align: center;
+    }
+    .Form
+    {
+        align-items: center;
     }
 }
 #Nome
