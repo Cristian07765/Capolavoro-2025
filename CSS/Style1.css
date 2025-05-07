@@ -50,6 +50,13 @@
 {
     display: block;
 }
+
+.Colonna 
+{
+    margin: 40px;
+    margin-right: 220px; /* aggiunge spazio a destra */
+}
+
     /* Telefoni */
 @media (max-width: 767px) {
     body 
@@ -398,42 +405,6 @@ th
     font-family: "Roboto";
 }
 
-@media (min-width: 1024px) 
-{
-    .Contenuto2 
-    {
-        display: flex; 
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
-    }
-    .Rettangolo 
-    {
-        order: 1; 
-    }
-    .Form 
-    {
-        order: 2; 
-    }
-    .Rettangolo, .Form 
-    {
-        width: 100%;
-        margin: 10px;
-    }
-}
-
-@media (max-width: 767px) 
-    {
-        .Contenuto2 
-        {
-            flex-direction: column;
-            align-items: center;
-        }
-        .Rettangolo, .Form 
-        {
-            width: 90%;
-        }
-    }
 #Nome
 {
     width: 200px;
