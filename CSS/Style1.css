@@ -358,8 +358,8 @@ th
 /* Codice CSS "Contatti" */
 .Contenuto2 
 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
     gap: 20px;
     padding: 20px;
     align-items: start; 
@@ -369,7 +369,7 @@ th
     padding: 20px;
     background-color: #e0f7fa;
     border-radius: 8px;
-    width: 100%; 
+    width: 70%; 
     margin-bottom: 20px; 
     word-wrap: break-word;
 }
@@ -396,8 +396,34 @@ th
 {
     margin-left: 15px;
     font-family: "Roboto";
-    text-align: center;
 }
+
+@media (min-width: 1024px) 
+{
+    .Contenuto2 
+    {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .Rettangolo, .Form 
+    {
+        width: 45%;
+        margin: 10px;
+    }
+}
+@media (max-width: 767px) 
+    {
+        .Contenuto2 
+        {
+            flex-direction: column;
+            align-items: center;
+        }
+        .Rettangolo, .Form 
+        {
+            width: 90%;
+        }
+    }
 #Nome
 {
     width: 200px;
