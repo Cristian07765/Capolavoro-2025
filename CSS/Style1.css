@@ -412,33 +412,28 @@ th
 
 @media (max-width: 767px) 
 {
-    
     .Contenuto2 
     {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
         padding: 10px;
-        margin-left: 80px; 
-        text-align: center; /* opzionale: per centrare il testo */
-    }
-
-    .Rettangolo, .Form 
-    {
+        margin: 0 auto;
         width: 100%;
-        max-width: 400px; 
-        box-sizing: border-box;
-        align-self: center;
+        text-align: center;
     }
 
+    .Rettangolo,
+    .Form,
     .Contatti 
     {
-        margin-left: 0;
-
+        width: 90%;
+        max-width: 400px;
+        margin: 10px auto;
+        text-align: center;
     }
 }
-
 #Nome
 {
     width: 200px;
