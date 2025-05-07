@@ -413,10 +413,10 @@ th
     }
     .Form 
     {
-        padding: 20px;
+        padding: 60px;
         order: 2; 
         height: auto; 
-    min-height: 400px;
+        min-height: 400px;
     }
     .Rettangolo, .Form 
     {
