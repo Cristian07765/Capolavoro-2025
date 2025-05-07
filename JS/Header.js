@@ -11,7 +11,7 @@ function Header() {
                 </div>
             </div>
             <div class="Menu-desktop">
-                <a href="Home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="Chi-Siamo.html">Chi Siamo</a>
                 <a href="Viaggi.html">Viaggi</a>
                 <a href="Last-minute.html">Last-minute</a>
