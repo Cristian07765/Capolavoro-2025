@@ -397,7 +397,6 @@ th
     margin-left: 15px;
     font-family: "Roboto";
 }
-
 @media (min-width: 1024px) 
 {
     .Contenuto2 
@@ -409,6 +408,8 @@ th
     }
     .Rettangolo 
     {
+        height: 100px;
+        width: 100px;
         order: 1; 
     }
     .Form 
