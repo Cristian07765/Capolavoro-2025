@@ -185,7 +185,13 @@ li.Elenco {
     font-weight: bold;
     font-family: "Roboto";
 }
-
+table {
+    width: 80%; 
+    margin-left: auto;  
+    margin-right: auto; 
+    border-collapse: collapse; 
+    font-family: "Roboto";
+}
 th, td {
     border: 1px solid black;
     background-color: #8ce6f2cc;
@@ -193,8 +199,16 @@ th, td {
 }
 th {
     background-color: #8ce6f2cc;
+} 
+.Prenota {
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: white;
 }
-
 .Contenuto {
     flex-grow: 1;
 }
