@@ -406,17 +406,19 @@ th
 }
 
 @media (max-width: 767px) 
+{
+    .Contenuto2 
     {
-        .Contenuto2 
-        {
-            flex-direction: column;
-            align-items: center;
-        }
-        .Rettangolo, .Form 
-        {
-            width: 90%;
-        }
+        flex-direction: column;
+        align-items: center;
     }
+
+    .Rettangolo, .Form 
+    {
+        width: 90%;
+        order: unset; 
+    }
+}
 #Nome
 {
     width: 200px;
